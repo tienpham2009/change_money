@@ -10,26 +10,32 @@
     <tr>
         <td>
         <p>Amount</p>
-        <input name="So tien" value="So tien" type="number" min="1">
+        <input onchange="money()" name="So tien" type="number" min="1" id="inPut">
 
         </td>
         <td>
             <p>From Currency</p>
-            <select>
-                <option>VND</option>
-                <option>USD</option>
+            <select name="" id="from">
+                <option value="23000">VND</option>
+                <option value="1">USD</option>
             </select>
         </td>
         <td>
             <p>To Currency</p>
-            <select>
-                <option>VND</option>
-                <option>USD</option>
+            <select name="" id="to">
+                <option value="23000">VND</option>
+                <option value="1">USD</option>
             </select>
         </td>
+        <td style="text-align: center">
+            <button type="button" onclick="money()">Change</button>
+        </td>
+    </tr>
+    <tr>
+        <td><h2>Resrult :<p id="Result"></p></h2></td>
     </tr>
 </table>
-<button
+
     <script src="change_money.js"></script>
 </body>
 </html>
